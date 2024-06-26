@@ -2,5 +2,55 @@
     width: 24px;
     height: 24px;
     background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
+}
+.header{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container_image{
+   padding: 1em; 
+}
+
+.menu_list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container_button:checked ~ .menu_list{
+    display: block;
+}
+
+.menu_list_title, 
+.menu_list{
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.menu_list_title{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.menu_list_link{
+    background: var( --gradient_blue);
+    -webkit-backface-visibility: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container_button{
+    display: none;
 }

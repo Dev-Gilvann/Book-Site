@@ -1,11 +1,19 @@
 @import url("header.css");
+@import url("banner.css");
 
 :root{
     --background_color: #EBECEE;
+    --white: #fff;
+    --orange: #eb9b00; 
+    --gradient_blue:linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --main-font: "Poppins";
 }
 
 body{
     background-color: var(--background_color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 h1{
